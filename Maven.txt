@@ -1,1 +1,73 @@
+Apache Maven
+
+Narzędzie automatyzujące budowę oprogramowania na platformę Java. 
+
+Poszczególne funkcje Mavena realizowane są poprzez wtyczki, które są automatycznie pobierane przy ich pierwszym wykorzystaniu. 
+
+Plik określający sposób budowy aplikacji nosi nazwę POM-u (ang. Project Object Model). 
+
+Cele
+
+Budowanie oprogramowania ma zakończyć się osiągnięciem wybranego przez budującego celu. 
+
+Dostępnych celów jest wiele. Pula celów nie jest bezpośrednio określona przez twórcę POM-a, tak jak ma to miejsce w przypadku Anta lub Make'a,
+lecz przez wtyczki rozszerzające funkcjonalność Mavena. 
+
+Poszczególne cele mogą wymagać wcześniejszej realizacji innych celów, np. cel package (zbudowanie paczki dystrybucyjnej) wymaga uprzedniej
+realizacji compile (kompilacja kodów źródłowych) oraz test (uruchomienie testów automatycznych). 
+
+
+Główny cykl życia
+
+Mianem głównego cyklu życia projektu określa się uszeregowanych kolejno osiem najważniejszych z punktu widzenia budowy aplikacji celów. 
+
+Powodzenie każdego kolejnego celu uzależnione jest od pomyślnej realizacji celów znajdujących się wcześniej w cyklu.
+
+   1. clean - usuwa pliki powstałe w czasie budowania projektu
+   2. validate - sprawdzenie, czy projekt jest poprawny i czy wszystkie niezbędne informacje zostały określone
+   3. compile - kod źródłowy jest kompilowany
+   4. test - przeprowadzane są testy jednostkowe
+   5. package - budowana jest paczka dystrybucyjna
+   6. integration-test - zbudowany projekt umieszczany jest w środowisku testowym, gdzie przeprowadzane są testy integracyjne
+   7. verify - sprawdzenie, czy paczka jest poprawna
+   8. install - paczka umieszczana jest w repozytorium lokalnym - może być używana przez inne projekty jako zależność
+   9. deploy - paczka umieszczana jest w repozytorium zdalnym (opublikowana)
+
+Ponadto Apache Maven może wykonać dodatkowe kroki, jeżeli jest to zdefiniowane w POM-ie, np. wygenerować stronę internetową projektu. 
+
+POM, czyli Project Object Model, to dokument XML-owy kompleksowo opisujący projekt. 
+POM nie tylko precyzuje szczegóły budowy produktu, ale też może przechowywać informacje o zespole programistów, zastosowanych systemach
+wspomagających rozwój oprogramowania itd. W Mavenie dokument POM nosi nazwę pom.xml. 
+
+Powiązania pomiędzy POM-ami
+
+   1. Agregacja - Mechanizm mający na celu rozbicie dużego projektu na podprojekty (moduły), by ułatwić zarządzanie źródłami. 
+                  POM głównego projektu agreguje POM-y modułów, te zaś mogą agregować POM-y swoich podmodułów itd.
+
+   2. Dziedziczenie - Każdy POM ma rodzica, którym jest inny dokument POM. Eliminuje to potrzebę jawnego określania wszystkich elementów 
+                  w POM-ie każdego modułu - jeżeli dana opcja nie została sprecyzowana w konkretnym POM-ie, to jest ona pobierana z rodzica. 
+                  Jeżeli rodzic również jej nie określa, to z rodzica rodzica itd, ponieważ dziedziczenie POM-ów jest przechodnie. 
+                  Jeżeli rodzic nie jest podany wprost, to jest nim tzw. Super POM - dokument określający domyślną konfigurację.
+
+  3. Zależność
+
+Nie należy mylić dziedziczenia z agregacją 
+
+Dziedziczenie to mechanizm mający na celu ograniczenie powielania treści POM-ów, podczas gdy agregacja ma na celu modularyzację projektu. 
+Dziedziczenie jest niezależne od podziału projektu na moduły, choć oba mechanizmy bardzo często występują razem. 
+
+Tworzenie POM-a
+
+Programista może napisać POM-a samodzielnie od podstaw, prościej jednak użyć Mavena, który potrafi wygenerować prostego POM-a samodzielnie.
+
+Wtyczki
+
+Większość funkcji Mavena dostępna jest za pośrednictwem wtyczek. Każda z wtyczek Mavena posiada wyspecyfikowane cele które może realizować. 
+
+Dany cel może być wywołany używając poniższej składni:
+
+mvn [nazwa-wtyczki]:[nazwa-celu]
+
+Przykładowo kompilacji kodu można dokonać wywołując mvn compile:compile. 
+
 
