@@ -22,3 +22,10 @@ Sekcja 2: Workshop: Introducing the use case - Mogambo.org
 
 Sekcja 3: Concepts: Introduction to Docker Based Delivery
 19. Section Introduction
+20. Three Ways - Containers, VMs and Bare Metals
+21. Whats under the hood - Namespaces, Cgroups and OverlayFS
+22. Portability, Density, Consistency - The Key Features of Docker
+23. The Docker Evolution Story
+24. Docker Workflow and Components
+
+Sekcja 4: Setup: Creating Learning Environment
