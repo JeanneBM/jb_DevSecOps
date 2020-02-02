@@ -32,3 +32,11 @@ Sekcja 4: Setup: Creating Learning Environment
 30. Section Introduction 
 31. Setting up and validating docker environment
 32. LAB 1: Setting up and validating docker environment
+33. Running your first container
+34. Making containers persist with -idt options
+35. Essential Container Operations - list, logs, exec, cp, inspect, stop, rm
+36. Publishing containers using port mapping
+37. Using docker instead of VMs to create development environments
+38. Portainer - Web console to managing Docker Environemnts
+39. Launching Application Stack with Docker Compose
+
