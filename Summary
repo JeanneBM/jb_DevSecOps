@@ -21,12 +21,12 @@
    21  ls -a
    22  cd .git
    23  ll
-   24  git config --global user.name "bojko.joanna@gmail.com"
+   24  git config --global user.name "ituwpisujemójmail"
    25  cat config
    26  git config --global user.name "asia"
-   27  git config --global mail "bojko.joanna@gmail.com"
+   27  git config --global mail "ituwpisujemójmail"
    28  git config --list
-   29  git config user.email "bojko.joanna@gmail.com"
+   29  git config user.email "ituwpisujemójmail"
    30  git config --list
    31  cat config
    32  git config user.name "asia"
