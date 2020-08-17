@@ -91,7 +91,7 @@
    91  git status
    92  git reset asia
    93  git status
-   94  git log --graph --simplify-by-decoration --pretty=format:'%d' --all
+   94  git log --graph --simplify-by-decoration --pretty=format:'%d'https://github.com/k-o-s/Docker.git  --all
    95  git status
    96  git add .
    97  git status
@@ -143,7 +143,7 @@
   143  cat > plik.txt 
   144  git status
   145  git add .
-  146  git commit -m 'komituje trzeci raz ...'
+  146  git commit -m 'komituje trzeci raz ...'https://github.com/k-o-s/Docker.git 
   147  git log
   148  git checkout
   149  git branch --list
@@ -332,3 +332,4 @@
   332  history
 
 
+przykladowe URL https://github.com/k-o-s/Docker.git 
