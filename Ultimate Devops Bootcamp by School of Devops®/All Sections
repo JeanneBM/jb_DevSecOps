@@ -1,4 +1,4 @@
-Sekcja 1: Concepts: The Devops Story
+Section 1: Concepts: The Devops Story
 1. The Beginning - Assembly Line and Toyota Production System
 2. Lean to Agile
 3. From Agile to Devops
@@ -11,7 +11,7 @@ Sekcja 1: Concepts: The Devops Story
 10. Continuous Delivery and Deployment
 11. Continuous Monitoring - Completing the Feedback Loop
 
-Sekcja 2: Workshop: Introducing the use case - Mogambo.org
+Section 2: Workshop: Introducing the use case - Mogambo.org
 12. Introducing the Use Case
 13. The rapid rise of Mogambo - the ecommerce giant of Sundarland
 14. Quick Analysis of Organizational Goals and Current Setup
@@ -20,7 +20,7 @@ Sekcja 2: Workshop: Introducing the use case - Mogambo.org
 17. The Devops Approach
 18. Summary
 
-Sekcja 3: Concepts: Introduction to Docker Based Delivery
+Section 3: Concepts: Introduction to Docker Based Delivery
 19. Section Introduction
 20. Three Ways - Containers, VMs and Bare Metals
 21. Whats under the hood - Namespaces, Cgroups and OverlayFS
@@ -28,7 +28,7 @@ Sekcja 3: Concepts: Introduction to Docker Based Delivery
 23. The Docker Evolution Story
 24. Docker Workflow and Components
 
-Sekcja 4: Setup: Creating Learning Environment
+Section 4: Setup: Creating Learning Environment
 30. Section Introduction 
 31. Setting up and validating docker environment
 32. LAB 1: Setting up and validating docker environment
