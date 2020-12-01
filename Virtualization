@@ -1,3 +1,6 @@
 Hypervisor allows VMs to have access to/share/use physical machine.
 
 ESXi - hypervisor doesn't required OS on physical machine
+
+VMware ESXi - is an application with components like operating system (e.g. has kernel) which is split into VMs. The hypervisor allows VMs to use physical resources
+
