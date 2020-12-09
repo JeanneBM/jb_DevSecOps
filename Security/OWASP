@@ -1,4 +1,4 @@
-The Top 10 OWASP vulnerabilities in 2020 are:
+The Top 10 OWASP vulnerabilities in 2019/2020 are:
 
     Injection
     Broken Authentication
@@ -10,3 +10,6 @@ The Top 10 OWASP vulnerabilities in 2020 are:
     Insecure Deserialization
     Using Components with known vulnerabilities
     Insufficient logging and monitoring
+
+
+
