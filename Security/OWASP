@@ -1,0 +1,12 @@
+The Top 10 OWASP vulnerabilities in 2020 are:
+
+    Injection
+    Broken Authentication
+    Sensitive Data Exposure
+    XML External Entities (XXE)
+    Broken Access control
+    Security misconfigurations
+    Cross Site Scripting (XSS)
+    Insecure Deserialization
+    Using Components with known vulnerabilities
+    Insufficient logging and monitoring
