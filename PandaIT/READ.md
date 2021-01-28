@@ -1,11 +1,11 @@
-CI/CD
-Git
-Maven
-Docker
-Jenkins
-Selenium/JUnit
-Artifactory
+I. CI/CD
+II. Git
+III. Maven
+IV. Docker
+V. Jenkins
+VI. Selenium/JUnit
+VII. Artifactory
 
-AWS
-Terraform
-Kubernetes
+VIII. AWS
+IX. Terraform
+X. Kubernetes
