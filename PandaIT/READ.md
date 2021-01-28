@@ -12,6 +12,10 @@ VI. Selenium/JUnit
 
 VII. Artifactory
 
+
 VIII. AWS
+
 IX. Terraform
+
 X. Kubernetes
+
