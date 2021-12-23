@@ -6,6 +6,8 @@ vagrant ssh
 
 vagrant ssh-config >> C:/Users/ ... /.ssh/config
 
+/usr/bin/ssh init@127.0.0.1 -p 2222
+
 sudo yum upgrade; sudo yum install vim; sudo yum install net-tools 
 ```
 
