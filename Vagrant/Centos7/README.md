@@ -6,9 +6,7 @@ vagrant ssh
 
 vagrant ssh-config >> C:/Users/ ... /.ssh/config
 
-sudo yum upgrade
-sudo yum install vim 
-sudo yum install net-tools 
+sudo yum upgrade; sudo yum install vim; sudo yum install net-tools 
 ```
 
 ## Static IP
