@@ -4,7 +4,7 @@ vagrant init centos/7
 vagrant up
 vagrant ssh
 
-echo 'vagrant ssh-config' >> C:/Users/ ... /.ssh/config
+vagrant ssh-config >> C:/Users/ ... /.ssh/config
 ```
 ## Docker CE on CentOS:
 ```
