@@ -15,8 +15,8 @@ https://www.itzgeek.com/how-tos/linux/centos-how-tos/how-to-configure-static-ip-
 
 ## Partition
 ```
-lsblk
-fdisk /dev/sda
+lsblk; df -h
+fdisk /dev/sda 
 ```
 ## Docker CE on CentOS:
 ```
