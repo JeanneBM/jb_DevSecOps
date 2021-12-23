@@ -26,7 +26,7 @@ sudo yum install wget; sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.je
 
 ## Git
 ```
-
-
+vim Dockerfile
+docker build -t git .
 ```
 
