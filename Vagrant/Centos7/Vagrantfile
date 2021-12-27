@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
       jeannebm.vm.network "private_network", ip: "192.168.100.10"
       jeannebm.vm.network "forwarded_port", guest: 22, host: 2222, auto_correct: true 
       jeannebm.vm.network "forwarded_port", guest: 8080, host: 8080, auto_correct: true
-      jeannebm.vm.provision "shell", path: "start.sh"
+#      jeannebm.vm.provision "shell", path: "start.sh"
       jeannebm.vm.provider :virtualbox do |vb|
           vb.customize ["modifyvm", :id, "--memory", "2048"]
           vb.customize ["modifyvm", :id, "--cpus", "3"]
