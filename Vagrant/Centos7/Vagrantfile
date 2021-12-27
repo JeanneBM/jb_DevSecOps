@@ -3,7 +3,7 @@ $ cat Vagrantfile
 # vi: set ft=ruby :
 
 
-Vaant.configure("2") do |config|
+Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
   
     config.vm.define :client do |jeannebm|
