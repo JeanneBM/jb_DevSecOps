@@ -28,7 +28,7 @@ sudo groupadd docker; sudo usermod -aG docker $USER; sudo reboot ; [after reboot
 ```
 ## Jenkins:
 ```
-sudo yum install -y wget; sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo; sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key; sudo yum upgrade; sudo yum install epel-release java-11-openjdk-devel; sudo yum install jenkins; sudo systemctl daemon-reload; sudo systemctl start jenkins; sudo systemctl enable jenkins; sudo systemctl status jenkins
+sudo yum install -y wget; sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo; sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key; sudo yum upgrade; sudo yum install -y epel-release java-11-openjdk-devel; sudo yum install -y jenkins; sudo systemctl daemon-reload; sudo systemctl start jenkins; sudo systemctl enable jenkins; sudo systemctl status jenkins
 
 
 ```
