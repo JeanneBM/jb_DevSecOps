@@ -14,7 +14,7 @@ Vaant.configure("2") do |config|
       jeannebm.vm.provision "shell", path: "start.sh"
       jeannebm.vm.provider :virtualbox do |vb|
           vb.customize ["modifyvm", :id, "--memory", "2048"]
-          vb.customize ["modifyvm", :id, "--cpus", "3"
+          vb.customize ["modifyvm", :id, "--cpus", "3"]
       end 
     end
 end
