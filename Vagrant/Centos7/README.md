@@ -1,3 +1,8 @@
+## Useful commands:
+```
+netstat -tnlp
+```
+
 ## Init
 ```
 vagrant init centos/7
