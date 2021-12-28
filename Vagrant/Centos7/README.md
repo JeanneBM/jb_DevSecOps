@@ -1,5 +1,6 @@
 ## Useful commands:
 ```
+whereis git
 netstat -tnlp
 chmod +x docker_env.sh //no such a command as script ./
 ```
