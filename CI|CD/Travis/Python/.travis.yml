@@ -1,0 +1,27 @@
+language: php
+php:
+  - '7.1'
+services:
+  - mysql
+addons:
+  firefox: latest
+env:
+  - MOZ_HEADLESS=1
+    DISPLAY=:99.0
+    SELENIUM_FIREFOX_DRIVER=/home/travis/build/lotcz/zSample/geckodriver
+before_install:
+  - sudo apt-get update > /dev/null
+  - wget https://selenium/download/url -O selenium-server.jar
+  - wget https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-linux32.tar.gz
+  - tar -xzf geckodriver-v0.21.0-linux32.tar.gz
+install:
+  - sudo apt-get install apache2
+  - sudo service apache2 start
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS zsample;'      
+before_script:      
+  - nohup java -jar -Dwebdriver.gecko.driver=$SELENIUM_FIREFOX_DRIVER selenium-server.jar &
+  - composer install
+script:
+  - phpunit --fail-on-risky --fail-on-warning --stop-on-skipped --stop-on-incomplete --verbose --debug --colors
+after_failure:     
+  - cat nohup.out
