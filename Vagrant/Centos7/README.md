@@ -14,7 +14,7 @@ vagrant ssh-config >> C:/Users/ ... /.ssh/config
 
 # /usr/bin/ssh init@127.0.0.1 -p 2222
 
-sudo yum upgrade; sudo yum install -y vim; sudo yum install -y net-tools; sudo yum install -y wget; ssh-keygen;
+sudo yum upgrade; sudo yum install -y vim; sudo yum install -y net-tools; sudo yum install -y wget; ssh-keygen; yum install -y git; 
 ```
 
 ## Static IP
