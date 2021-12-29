@@ -1,5 +1,14 @@
 ## Useful commands:
 ```
+docker run
+docker stop; docker rm
+docker build
+docker create 
+docker ps
+docker images
+docker container ls
+docker volume ls
+
 sudo docker-compose up -d
 whereis git
 netstat -tnlp
