@@ -56,6 +56,9 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/
 
 ## Git
 ```
+git add .; git commit -m "Final"; git remote add origin 
+git push -u origin master
+
 vim Dockerfile
 docker build -t git .
 ```
