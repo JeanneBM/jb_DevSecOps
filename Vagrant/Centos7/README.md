@@ -1,5 +1,6 @@
 ## Useful commands:
 ```
+sudo docker-compose up -d
 whereis git
 netstat -tnlp
 chmod +x docker_env.sh //no such a command as script ./
