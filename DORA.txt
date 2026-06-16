@@ -1,0 +1,12 @@
+DORA była inicjatywą badającą praktyki DevOps.
+
+Mierzy efektywność zespołów IT/DevOps – pozwala ocenić, jak sprawnie dostarczane jest oprogramowanie.
+Deployment Frequency (DF) – jak często wdrażasz zmiany na produkcję.
+Lead Time for Changes (LT) – czas od zatwierdzenia kodu do wdrożenia.
+Change Failure Rate (CFR) – procent wdrożeń powodujących awarie lub wymagających poprawek.
+Mean Time to Restore (MTTR) – średni czas przywrócenia usługi po awarii.
+Promuje automatyzację CI/CD – ręczne procesy zwykle pogarszają wyniki DORA.
+Wspiera małe i częste wdrożenia – zamiast dużych, ryzykownych release'ów.
+Pomaga identyfikować wąskie gardła – np. długie code review lub testy.
+Łączy wydajność z niezawodnością – szybciej nie znaczy lepiej, jeśli rośnie liczba awarii.
+Jest standardem branżowym DevOps
